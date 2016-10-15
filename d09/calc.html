@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title></title>
+		<style>
+			#circle {width: 200px; height:200px; background-color: red; border-radius: 200px;}
+		</style>
+	</head>
+	<body>
+		<div id='calc'>
+			<input type='text' id='nb_left' name='nb_left'/>
+			<select id='select'>
+				<option value='add'>+</option>
+				<option value='sub'>-</option>
+				<option value='mult'>*</option>
+				<option value='div'>/</option>
+				<option value='mod'>%</option>
+			</select>
+			<input type='text' id='nb_right' name='nb_right'/>
+			<input onclick="calc();" type='submit' name='submit' value="Try me!"/>
+		</div>
+		<script>
+			function calc()
+			{
+				var left = document.getElementById(nb_left).value;
+				var op = document.getElementById('select');
+				var choice = select.selectedIndex;
+				var right = document.getElementById(nb_right).value;
+				// alert(op.options[choice].value);
+				if (op.options[choice].value == 'add')
+				{
+					alert(left + right);
+				}
+			}
+		</script>
+	</body>
+</html>
