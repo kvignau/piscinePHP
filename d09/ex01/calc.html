@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<title>calc</title>
+	</head>
+	<body>
+		<div id='calc'>
+			<input type='text' id='nb_left' name='nb_left'/>
+			<select id='select'>
+				<option value='add'>+</option>
+				<option value='sub'>-</option>
+				<option value='mult'>*</option>
+				<option value='div'>/</option>
+				<option value='mod'>%</option>
+			</select>
+			<input type='text' id='nb_right' name='nb_right'/>
+			<input onclick="calc();" type='submit' name='submit' value="Try me!"/>
+		</div>
+		<script>
+			setInterval(function(){alert("Please, use me...");}, 30000);
+			function calc()
+			{
+				var left = document.getElementById('nb_left').value;
+				var op = document.getElementById('select');
+				var choice = select.selectedIndex;
+				var right = document.getElementById('nb_right').value;
+				if (Number.isInteger(Number(left)) && Number.isInteger(Number(right)) &&  Number(right) >= 0 &&  Number(left) >= 0)
+				{
+					if (op.options[choice].value == 'add')
+					{
+						var result = Number(left) + Number(right);
+						
+					}
+					else if (op.options[choice].value == 'sub')
+					{
+						var result = Number(left) - Number(right);
+						
+					}
+					else if (op.options[choice].value == 'mult')
+					{
+						var result = Number(left) * Number(right);
+						
+					}
+					else if (op.options[choice].value == 'mod' && Number(right) > 0)
+					{
+						var result = Number(left) % Number(right);
+						
+					}
+					else if (op.options[choice].value == 'div' && Number(right) > 0)
+					{
+						var result = Number(left) / Number(right);
+						
+					}
+					if ((op.options[choice].value == 'div' || op.options[choice].value == 'mod') && Number(right) == 0)
+					{
+						alert("It's over 9000!");
+						console.log("It's over 9000!");
+					}
+					else
+					{
+						alert(result);
+						console.log(result);
+					}
+				}
+				else
+					alert("Error :(");
+			}
+		</script>
+	</body>
+</html>
