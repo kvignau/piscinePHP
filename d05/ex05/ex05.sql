@@ -1,0 +1,1 @@
+DELETE FROM db_kvignau.`ft_table` WHERE id LIMIT 5;

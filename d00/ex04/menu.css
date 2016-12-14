@@ -1,0 +1,102 @@
+#menu
+{
+	text-align: center;
+}
+
+#menu ul
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+#menu li
+{
+	display: inline-block;
+}
+
+#menu ul
+{
+	position: absolute;
+	margin-left: -2000px;
+	#text-align: left;
+}
+
+#menu li:hover ul
+{
+	margin-left: auto;
+}
+
+#menu ul li
+{
+	display: inherit;
+}
+
+#menu a
+{
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.gen
+{
+	width: 120px;
+}
+
+.entree
+{
+	background-color: #00FF00;
+	border-radius: 10px 10px 0 0;
+}
+
+.plat
+{
+	background-color: #FF0000;
+	border-radius: 10px 10px 0 0;
+}
+
+.dessert
+{
+	background-color: #FFA000;
+	border-radius: 10px 10px 0 0;
+}
+
+.last
+{
+	border-radius: 0 0 10px 10px;
+}
+
+.entree1
+{
+	background-color: #00FF00;
+}
+
+.plat1
+{
+	background-color: #FF0000;
+}
+
+.dessert1
+{
+	background-color: #FFA000;
+}
+
+.entree1:hover
+{
+	background-color: #21610B;
+}
+
+.plat1:hover
+{
+	background-color: #610B0B;
+}
+
+.dessert1:hover
+{
+	background-color: #61380B;
+}
